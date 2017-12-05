@@ -100,17 +100,17 @@ In this exercise, you will create an Azure AD App and retrieve the Client ID and
 4.	In the next blade, click on New Application Registration on top of the blade.
 <img src="images/16new_appreg.jpg"/>
 5.	In the Create blade, configure as follows:
+
 -	Name: (Provide a unique value)
 -	Application type: Web app/API
 -	Sign-on URL: https://contoso.com
-
-
 
 ```
 Note: We will change this value later during the lab.
 ```
 
 And then click on Create.
+
 <img src="images/17createapp.jpg"/>
 
 6.	You will be redirected to the App registrations blade. You can check the app has been created by typing the App Name in the search field.
@@ -123,10 +123,12 @@ If the app has been created, you can see it in the results as shown above.
 9.	Now, Click on Keys in the settings blade.
 <img src="images/20app_key.jpg"/>
 10.	In the Keys blade, configure as follows:
--	Description: key1
--	Expires: Never expires
+
+- Description: key1
+- Expires: Never expires
 
 And Click on Save.
+
 <img src="images/21save_key.jpg"/>
 
 11.	After you click on save, the key value will be displayed which is the Client Secret.
