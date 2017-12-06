@@ -48,11 +48,12 @@ In this exercise, you will log into the Azure Portal using your Azure credential
 <img src="images/3azure_login.jpg"/>
 
 ```
-**Note :** At the first login, you may have to change the password, if asked for.
+Note : At the first login, you may have to change the password, if asked for.
 ```
 
 2.	**Enter** a new **password**. Then select **Update password and sign in**.
 <img src="images/4update_password.jpg"/>
+
 3.	Now, you will be directed to the Azure Dashboard
 <img src="images/5azure_dashboard.jpg"/>
 
@@ -61,22 +62,28 @@ In this exercise, you will verify the type of role you are assigned in this Subs
 
 1.	**Launch** a browser and **Navigate** to https://portal.azure.com. **Login** with the Microsoft Azure credentials you received via email.
 <img src="images/6azure_dashboard.jpg"/>
+
 2. **Click** on **Microsoft Azure**  at the top left corner of the screen, to view the Dashboard.
 <img src="images/7microsoftazure.jpg"/>
+
 3.	To toggle **show/hide** the Portal menu options with icon, **Click** on the **Show Menu** button. 
 <img src="images/8azure_menu.jpg"/>
+
 4.	**Click** on the **Resource groups** button in the **Menu navigation** bar to view the **Resource groups** blade.
 <img src="imaes/9resourcegroup.jpg"/>
+
 5.	You will see a Resource Group which you have access to, **click** on it.
 
 <img src="images/10select_rg.jpg"/>
+
 ```
-**Note:**
+Note:
 The Resource Group shown here is for demo purpose only. Actual name of the Resouce Group that you see may differ.
 ```
 
 6.	From the Resource Group blade that come up, **Select** the Access Control ( IAM ) which is on the left side of the blade.
 <img src="images/11access_control.jpg"/>
+
 7.	In the new blade that come up, you can see the **role** that is assigned to you.
 <img src="images/12role.jpg"/>
 
