@@ -210,37 +210,61 @@ Substitute for key vault name in the above command with the name of the keyvault
 
 ## Exercise 3: Deploy Openshift Cluster using ARM Template  
 In this exercise, you will deploy the Openshift cluster on Azure using ARM Template . 
-1.	Launch a browser and Navigate to https://github.com/SpektraSystems/openshift-container-platform
-2.	Now click on Deploy to Azure button and you will be redirected to the azure portal. If prompted login with the Microsoft Azure credentials you received via email.
+1.	**Launch** a browser and **Navigate** to https://github.com/SpektraSystems/openshift-container-platform
+
+2.	Now **click** on **Deploy to Azure** button and you will be redirected to the azure portal. If prompted **login** with the Microsoft Azure credentials you received via email.
+<img src="images/33deploytemplate.jpg"/>
+
 3.	Now you will be directed to the Custom Deployment blade.
-4.	In the Custom Deployment blade, configure the settings as follows:
--	Resource Group : Choose Use existing and scroll down to see the Resource Group which is already there)
--	Openshift Password  :  Provide a unique password
--	Ssh Public Key :  Provide the copied SSH key
--	Rhsm Username or Org Id: Provide the username of Redhat credentials
--	Rhsm Password or Org Id: Provide the password of Redhat credentials
--	Rhsm Pool Id: Provide the pool Id of Redhat OpenShift Subscription
--	Key Vault Name : Provide the Key Vault name you provided
--	Key Vault Secret : osdemovaultsecret
--	Aad Auth App Name : Provide the name of the AD App you created 
--	Aad Auth App Id : Provide the Client ID of the AD App you created 
--	Aad Auth Client Secret : Provide the secret key of the AD App
-And accept the terms of conditions.
-5.	And then click on Purchase.
+<img src="images/34custom_deployment.jpg"/>
+
+4.	In the **Custom Deployment** blade, **configure** the settings as follows:
+-	Resource Group : Choose Use **existing** and scroll down to see the Resource Group which is already there)
+-	Openshift Password  :  **Provide a unique password**
+-	Ssh Public Key :  **Provide the copied SSH key**
+-	Rhsm Username or Org Id: **Provide the username of Redhat credentials**
+-	Rhsm Password or Org Id: **Provide the password of Redhat credentials**
+-	Rhsm Pool Id: **Provide the pool Id of Redhat OpenShift Subscription**
+-	Key Vault Name : **Provide the Key Vault name you provided**
+-	Key Vault Secret : **osdemovaultsecret**
+-	Aad Auth App Name : **Provide the name of the AD App you created** 
+-	Aad Auth App Id : **Provide the Client ID of the AD App you created** 
+-	Aad Auth Client Secret : **Provide the secret key of the AD App**
+**And** accept the terms of conditions.
+<img src="images/35customdeployment_configure.jpg"/>
+<img src="images/36custeomdeployment_purchase.jpg"/>
+
+5.	And then **click** on **Purchase**.
+
 6.	Once the deployment starts, you can see the progress in the notification bar at the top of the Azure portal.
-7.	Once the deployment is complete, you can see it in the notifications tab as Deployment succeeded. Now, click on Go to resource group from the notifications tab.
+<img src="images/37deployment_progress.jpg"/>
+
+7.	Once the deployment is complete, you can see it in the notifications tab as Deployment succeeded. Now, **click** on **Go to resource group** from the notifications tab.
+<img src="images/38dep_succeed.jpg"/>
+
 8.	In the resource group blade that come up, you can see the deployments as Succeeded, click on that.
-9.	Select Microsoft Template from the new blade that come up.
+<img src="images/39resource_group.jpg"/>
+
+9.	Select **Microsoft Template** from the new blade that come up.
+<img src="images/40dep_status.jpg"/>
+
 10.	From the new blade that come up, you can see the outputs of the deployment.
+<img src="images/41dep_output.jpg"/>
+
 11.	Copy the Openshift Console URL, Bastion DNS FQDN and OpenShift Master SSH by clicking on Copy to a text editor
-12.	To verify that the deployment is working, Open a new tab in the browser and paste the copied URL.
+
+12.	To verify that the deployment is working, **Open** a new tab in the browser and paste the copied URL.
 ```
 Note: Skip the certificate warning
 ```
+
 13.	Now you will be directed to the Openshift Console Login page.
+<img src="images/42openshift_console.jpg"/>
+
 ```
 Note: If the above page comes up, then the deployment is working.
 ```
+
 ## Exercise 4: Configure Azure AD Authentication
 In this exercise, you will configure the AD App you created for Authentication into the Open Shift console.
 1.	Launch a browser and Navigate to https://portal.azure.com. Login with the Microsoft Azure credentials you received via email.
