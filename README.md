@@ -267,46 +267,98 @@ Note: If the above page comes up, then the deployment is working.
 
 ## Exercise 4: Configure Azure AD Authentication
 In this exercise, you will configure the AD App you created for Authentication into the Open Shift console.
-1.	Launch a browser and Navigate to https://portal.azure.com. Login with the Microsoft Azure credentials you received via email.
-2.	Click on the Azure Active Directory button in the Menu navigation bar to view the Azure Active Directory blade.
-3.	You will be directed to the Azure Active Directory blade, click on App registrations.
-4.	You will be redirected to the App registrations blade. You can search the App by typing the name of the App you created earlier, in the search field.
+1.	**Launch** a browser and **Navigate** to https://portal.azure.com. **Login** with the Microsoft Azure credentials you received via email.
+<img src="images/43az_dashboard.jpg"/>
+
+2.	**Click** on the **Azure Active Directory** button in the **Menu navigation** bar to view the **Azure Active Directory** blade.
+<img src="images/44az_ad.jpg"/>
+
+3.	You will be directed to the Azure Active Directory blade, **click** on **App registrations**.
+<img src="images/45app_reg.jpg"/>
+
+4.	You will be redirected to the **App registrations** blade. You can search the App by typing the name of the App you created earlier, in the search field.
+<img src="images/46select_app.jpg"/>
+
 5.	Click on the app you created and you will be directed to the App blade.
+<img src="images/47app_blade.jpg"/>
+
 6.	Now Click on Properties under Settings blade.
-7.	In the Properties blade, edit as follows:
+<img src="images/48app_properties.jpg"/>
+
+7.	In the **Properties** blade, **edit** as follows:
 -	App ID URI: (Provide the Open Shift Console URI)
 -	Home Page URL type: (Provide the Open Shift Console URI)
-And then click on Save.
+And then **click** on **Save**.
+<img src="images/49save_properties.jpg"/>
+
 8.	Once you save the properties, close the properties blade.
+<img src="images/50close_properties.jpg"/>
+
 9.	Then you will be redirected to the Settings Blade of AD App. Click on the Reply URLs
+<img src="images/51reply_url.jpg"/>
+
 10.	Now modify the openshift console url by removing the ‘console’ from the end and appending ‘oauth2callback/AzureAD’ to the url and provide it in the Reply URL blade that come up and then Click on Save. 
+<img src="images/52replyurl_save.jpg"/>
+
 11.	Now go back to the setting blade of the App and Click on Required permissions.
-12.	Click on Grant Permissions in the blade that come up and then Click on Yes
-13.	Now go back to the Active Directory blade by clicking on Azure Active Directory button in the Menu navigation bar.
+<img src="images/53req_permission.jpg"/>
+
+12.	Click on Grant Permissions in the blade that come up and then **Click** on **Yes**
+<img src="images/54grant_permission.jpg"/>
+<img src="images/55grantpermission_yes.jpg"/>
+
+13.	Now go back to the **Active Directory** blade by clicking on Azure Active Directory button in the **Menu navigation** bar.
+<img src="images/56az_ad.jpg"/>
+
 14.	Click on Enterprise Applications from the menu on the left side.
-15.	In the new blade that come up, click on All applications
+<img src="images/57enterprise_app.jpg"/>
+
+15.	In the new blade that come up, click on **All applications**
+<img src="images/58all_app.jpg	"/>
+
 16.	In the new blade that come up, edit the filter as follows: 
 -	Show: Select All Applications
 -	Application status: Any
 -	Application visibility: Any
-And then click on Apply.
+And then **click** on **Apply**.
+<img src="images/59all_application.jpg"/>
+
 17.	You can search the App by typing the name of the App you created earlier, in the search field.
 Select the App from the results.
+<img src="images/60searchapp.jpg	"/>
+
 18.	You will be redirected to the App Blade. Click on Properties under Manage section on the left side of the properties blade.
+<img src="images/61properties.jpg"/>
+
 19.	In the new blade that come up, select User Assignment Required and Click on Save.
-20.	Now, click on Users and groups under Manage section on the left side of the App Blade.
-21.	In the blade that come up, click on +Add user to assign a user to the app.
+<img src="images/62save_properties.jpg"/>
+
+20.	Now, click on **Users and groups** under Manage section on the left side of the App Blade.
+<img src="images/63user_groups.jpg"/>
+
+21.	In the blade that come up, click on **+Add user** to assign a user to the app.
 ```
 Note: If user is already added then skip next three steps.
 ``` 
-22.	In the Add Assignment blade that come up, click on Users and then select the id with which you logged in to Azure portal and click on Select.
+<img src="images/64adduser.jpg"/>
+
+22.	In the Add Assignment blade that come up, click on Users and then select the id with which you logged in to Azure portal and click on **Select**.
+<img src="images/65add_assignment.jpg"/>
+
 23.	Now you will be redirected to the Add Assignment blade. Click on Assign to assign the user to the app.
-24.	Now to verify that the user is able to authenticate to Openshift console via Azure AD, Open a new tab in the browser and paste the Openshift Console URL which you copied earlier.
+<img src="images/66assign.jpg"/>
+
+24.	Now to verify that the user is able to authenticate to Openshift console via Azure AD, **Open** a new tab in the browser and paste the Openshift Console URL which you copied earlier.
 ```
 Note: Skip the certificate warning
 ```
+<img src="images/67openshift_console.jpg"/>
+
 25.	Now click on AzureAD, you will be redirected to the Login Page. Provide the Azure credentials you received via email over there and click on Sign in.
+<img src="images/68sign_in.jpg"/>
+
 26.	Once the login is successful, you will be redirected to the Openshift console.
+<img src="images/69openshift_cp.jpg"/>
  
 
 
