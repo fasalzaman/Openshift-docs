@@ -153,10 +153,21 @@ Copy the value into the text editor where you saved the value of Application Id 
 ### Exercise 2: Create a Keyvault 
 In this exercise, you will configure Azure Bash Cloud Shell and create a Key vault in the existing resource group and store the SSH key inside the vault. 
 1.	**Launch** a browser and **Navigate** to https://portal.azure.com. **Login** with the Microsoft Azure credentials you received via email.
+<img src="images/23azure_dashboard.jpg"/>
+
 2.	**Click** on **Cloud Shell**  at the top right corner of the screen, to open the cloud shell.
+<img src="images/24cloudshell.jpg"/>
+
 3.	Then **Click** on **Bash ( Linux )**, and in the next page, **click** on **Show advanced settings**
-4.	In the new blade, select the existing resource group, provide unique names under Create new(Storage account and File share) and click on Create Storage.
+<img src="images/25selectbash.jpg"/>
+<img src="images/26advanced_settings.jpg"/>
+
+4.	In the new blade, select the existing resource group, provide unique names under Create new(Storage account and File share) and **click** on **Create Storage**.
+<img src="images/27create_storage.jpg"/>
+
 5.	In a few minutes, the bash shell will come up.
+<img src="images/28bashshell.jpg"/>
+
 6.	Now execute the following command in the cloud shell to create a key vault in the existing resource group.
 ```
 az keyvault create -n <uniquename> -g <ResourceGroup> -l <LocationOfResourceGroup> 
@@ -166,6 +177,8 @@ az keyvault create -n <uniquename> -g <ResourceGroup> -l <LocationOfResourceGrou
 Note:
 Provide the existing Resource Group name, it’s location and a unique name for key vault in the above command when executing
 ```
+<img src="images/29create_keyvault_bash.jpg"/>
+
 7.	Now execute the following command in the cloud shell to generate ssh key.
 ```
 ssh-keygen
@@ -173,18 +186,28 @@ ssh-keygen
 ```
 Note: Keep on clicking enter button until the key has been created.
 ```
+<img src="images/30generate _ssh.jpg"/>
+
 8.	Now execute the following command in the cloud shell to display the public ssh key. Copy the key into a text editor for later use.
+```
 cat .ssh/id_rsa.pub
+```
 ```
 Note: 
 The copied SSH Key should be made into a single line. You will need this key for later use.
 ```
+<img src="images/31display_publickey.jpg"/>
+
 9.	Now execute the following command to store the generated key in the key vault.
+```
 az keyvault secret set --vault-name <keyvaultname> -n osdemovaultsecret --file ~/.ssh/id_rsa
+```
 ```
 Note:
 Substitute for key vault name in the above command with the name of the keyvault created earlier when executing.
 ```
+<img src="images/32store_key.jpg"/>
+
 ## Exercise 3: Deploy Openshift Cluster using ARM Template  
 In this exercise, you will deploy the Openshift cluster on Azure using ARM Template . 
 1.	Launch a browser and Navigate to https://github.com/SpektraSystems/openshift-container-platform
