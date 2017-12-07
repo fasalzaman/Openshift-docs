@@ -319,57 +319,17 @@ And then **click** on **Save**.
 <img src="images/54grant_permission.jpg"/>
 <img src="images/55grantpermission_yes.jpg"/>
 
-13.	Now go back to the **Active Directory** blade by clicking on Azure Active Directory button in the **Menu navigation** bar.
-<img src="images/56az_ad.jpg"/>
 
-14.	Click on Enterprise Applications from the menu on the left side.
-<img src="images/57enterprise_app.jpg"/>
-
-15.	In the new blade that come up, click on **All applications**
-<img src="images/58all_app.jpg"/>
-
-16.	In the new blade that come up, edit the filter as follows: 
--	Show: Select All Applications
--	Application status: Any
--	Application visibility: Any
-And then **click** on **Apply**.
-<img src="images/59all_application.jpg"/>
-
-17.	You can search the App by typing the name of the App you created earlier, in the search field.
-Select the App from the results.
-<img src="images/60searchapp.jpg"/>
-
-18.	You will be redirected to the App Blade. Click on Properties under Manage section on the left side of the properties blade.
-<img src="images/61properties.jpg"/>
-
-19.	In the new blade that come up, select User Assignment Required and Click on Save.
-<img src="images/62save_properties.jpg"/>
-
-20.	Now, click on **Users and groups** under Manage section on the left side of the App Blade.
-<img src="images/63user_groups.jpg"/>
-
-21.	In the blade that come up, click on **+Add user** to assign a user to the app.
-```
-Note: If user is already added then skip next three steps.
-``` 
-<img src="images/64adduser.jpg"/>
-
-22.	In the Add Assignment blade that come up, click on Users and then select the id with which you logged in to Azure portal and click on **Select**.
-<img src="images/65add_assignment.jpg"/>
-
-23.	Now you will be redirected to the Add Assignment blade. Click on Assign to assign the user to the app.
-<img src="images/66assign.jpg"/>
-
-24.	Now to verify that the user is able to authenticate to Openshift console via Azure AD, **Open** a new tab in the browser and paste the Openshift Console URL which you copied earlier.
+13.	Now to verify that the user is able to authenticate to Openshift console via Azure AD, **Open** a new tab in the browser and paste the Openshift Console URL which you copied earlier.
 ```
 Note: Skip the certificate warning
 ```
 <img src="images/67openshift_console.jpg"/>
 
-25.	Now click on AzureAD, you will be redirected to the Login Page. Provide the Azure credentials you received via email over there and click on Sign in.
+14.	Now click on AzureAD, you will be redirected to the Login Page. Provide the Azure credentials you received via email over there and click on Sign in.
 <img src="images/68sign_in.jpg"/>
 
-26.	Once the login is successful, you will be redirected to the Openshift console.
+15.	Once the login is successful, you will be redirected to the Openshift console.
 <img src="images/69openshift_cp.jpg"/>
  
  
