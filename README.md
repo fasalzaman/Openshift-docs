@@ -1,5 +1,5 @@
 # AEC Open Shift | Lab Guide
-
+## Contents
 <!-- TOC -->
 
 1. [Workshop Architecture and Objective](#workshop-architecture-and-objective)
