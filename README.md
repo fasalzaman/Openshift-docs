@@ -3,11 +3,32 @@
 <!-- TOC -->
 
 1. [Workshop Architecture and Objective](#workshop-architecture-and-objective)
+   1. Labs Objective	
+   2. Workshop Architecture after deploying ARM Template	
 2. [Lab 1: Introduction to Azure Portal](#lab-1-introduction-to-azure-portal)
+   1. Lab Overview
+   2. Prerequisites	
+   3. Time Estimate	
+   4. Exercise 1: Log into your Azure Portal	
+   5. Exercise 2: Verify access to the Subscription	
 3. [Lab 2: Deploying Open Shift cluster using ARM templates](#lab-2-deploying-open-shift-cluster-using-arm-templates)
+   1. Lab Overview	9
+   2. Prerequisites	9
+   3. Time Estimate	9
+   4. Exercise 1: Create an Azure AD Application	9
+   5. Exercise 2: Create a Keyvault 	14
+   6. Exercise 3: Deploy Openshift Cluster using ARM Template	18
+   7. Exercise 4: Configure Azure AD Authentication	24
 4. [Lab 3: Deploying workload on Openshift](#lab-3-deploying-workload-on-openshift)
+   1. Lab overview	37
+   2. Prerequisites	37
+   3. Time Estimate	37
+   4. Exercise 1: Deploy a 2 Tier Node JS Application on Open Shift	38
+   5. Exercise 2: Installing OpenShift CLI	43
+   6. Exercise 3: Deployment in OpenShift using CLI	45
+   7. Exercise 4: Create an App using Docker build	49
 5. [Lab 4: Integration of ACR with OpenShift](#lab-4-integration-of-acr-with-openshift)
-
+   1. Exercise 1: Integrate ACR with OpenShift
 <!-- /TOC -->
 
 ## Workshop Architecture and Objective
