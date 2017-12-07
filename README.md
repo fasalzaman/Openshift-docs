@@ -631,12 +631,12 @@ In this exercise, you will deploy an Azure Container Registry and integrate it w
 
 5.	In the **create** blade that come up, **configure** the settings as follows:
 
-•	Registry name  :  **uniquename** (This name should be unique across Azure.)
-•	Subscription : Select the **existing** subscription
-•	Resource Group : Choose Use existing and scroll down to see the Resource Group which is already there and select that)
-•	Location: **South Central US**
-•	Admin user: Select **Enable**
-•	SKU: **Standard**
+-	Registry name  :  **uniquename** (This name should be unique across Azure.)
+-	Subscription : Select the **existing** subscription
+-	Resource Group : Choose Use existing and scroll down to see the Resource Group which is already there and select that)
+-	Location: **South Central US**
+-	Admin user: Select **Enable**
+-	SKU: **Standard**
 
 <img src="images/107create_acr.jpg"/>  
 
