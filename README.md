@@ -5,8 +5,8 @@
 1. [Workshop Architecture and Objective](#workshop-architecture-and-objective)
 2. [Lab 1: Introduction to Azure Portal](#lab-1-introduction-to-azure-portal)
 3. [Lab 2: Deploying Open Shift cluster using ARM templates](#lab-2-deploying-open-shift-cluster-using-arm-templates)
-4. [Lab 3: Deploying workload on Openshift](#Lab-3-deploying-workload-on-openshift)
-5. [Lab 4: Integration of ACR with OpenShift](#Lab-4-integration-of-acr-with-openShift)
+4. [Lab 3: Deploying workload on Openshift](#lab-3-deploying-workload-on-openshift)
+5. [Lab 4: Integration of ACR with OpenShift](#lab-4-integration-of-acr-with-openshift)
 
 <!-- /TOC -->
 
